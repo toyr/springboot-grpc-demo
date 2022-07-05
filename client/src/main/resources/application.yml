@@ -1,0 +1,12 @@
+grpc:
+  client:
+    grpc-server:
+      address: static://localhost:8888
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+spring:
+  application:
+    name: grpc-client
+server:
+  port: 8891
